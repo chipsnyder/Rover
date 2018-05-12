@@ -141,8 +141,11 @@
                     </view>
                     <navigationItem key="navigationItem" title="Rover" largeTitleDisplayMode="never" id="cbc-rI-fki"/>
                     <connections>
+                        <outlet property="curiousityRover" destination="NJv-jh-QeX" id="Bld-Aj-OOf"/>
                         <outlet property="deathStarImageView" destination="b0C-mM-9U5" id="e9Y-yj-FMK"/>
                         <outlet property="marsBackground" destination="Rf3-yR-Zmu" id="Cl7-9i-NBc"/>
+                        <outlet property="opportunityRover" destination="cHG-t1-otc" id="n9E-zU-LuJ"/>
+                        <outlet property="spiritRover" destination="9AO-nD-5p5" id="B1J-jn-uvd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

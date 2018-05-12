@@ -49,9 +49,6 @@ Hills by Anbileru Adaleru from the Noun Project
 ![Dust by Andres Meneses from the Noun Project](images/noun_915373_cc.png)
 
 Dust by Andres Meneses from the Noun Project
-![Dust by Andres Meneses from the Noun Project](images/noun_915373_cc_modified.png)
-
-Dust by Andres Meneses from the Noun Project This Image was modified from the one before.
 
 ![Stars by Anthony Bossard from the Noun Projectt](images/noun_315722_cc.png)
 
@@ -59,4 +56,4 @@ Dust by Andres Meneses from the Noun Project This Image was modified from the on
 Stars by Anthony Bossard from the Noun Project
 
 
-Icons not mentioned here were either developed by myself or used from Material Design.
+Icons not mentioned here are provided by Apple Packaged resources.

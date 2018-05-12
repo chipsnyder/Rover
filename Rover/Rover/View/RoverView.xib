@@ -13,6 +13,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RoverView" customModule="Rover" customModuleProvider="target">
             <connections>
                 <outlet property="contentView" destination="iN0-l3-epB" id="TWV-m2-BDH"/>
+                <outlet property="exhaust" destination="H1p-g4-Ug4" id="1Ud-hK-BSd"/>
                 <outlet property="roverName" destination="U57-ue-y4i" id="iat-Ig-eyC"/>
             </connections>
         </placeholder>
@@ -44,27 +45,18 @@
                         </userDefinedRuntimeAttribute>
                     </userDefinedRuntimeAttributes>
                 </label>
-                <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dust2" translatesAutoresizingMaskIntoConstraints="NO" id="H1p-g4-Ug4">
+                <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dust" translatesAutoresizingMaskIntoConstraints="NO" id="H1p-g4-Ug4">
                     <rect key="frame" x="107.5" y="47.5" width="35" height="22"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="35" id="961-SE-JwR"/>
                         <constraint firstAttribute="width" secondItem="H1p-g4-Ug4" secondAttribute="height" multiplier="11:7" id="9GA-93-13e"/>
                     </constraints>
                 </imageView>
-                <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dust2" translatesAutoresizingMaskIntoConstraints="NO" id="jXv-lf-VFv">
-                    <rect key="frame" x="2.5" y="47.5" width="35" height="22"/>
-                    <constraints>
-                        <constraint firstAttribute="width" constant="35" id="NXt-n9-sdg"/>
-                        <constraint firstAttribute="width" secondItem="jXv-lf-VFv" secondAttribute="height" multiplier="11:7" id="Ocd-1D-ZSv"/>
-                    </constraints>
-                </imageView>
             </subviews>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
-                <constraint firstItem="l96-gR-rHs" firstAttribute="leading" secondItem="jXv-lf-VFv" secondAttribute="trailing" id="AoD-Dn-ZEQ"/>
                 <constraint firstItem="H1p-g4-Ug4" firstAttribute="leading" secondItem="l96-gR-rHs" secondAttribute="trailing" id="GG6-N5-Az4"/>
                 <constraint firstItem="l96-gR-rHs" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="KaJ-xS-ZKD"/>
-                <constraint firstItem="jXv-lf-VFv" firstAttribute="bottom" secondItem="l96-gR-rHs" secondAttribute="bottom" id="LdC-AC-sPu"/>
                 <constraint firstItem="U57-ue-y4i" firstAttribute="centerX" secondItem="l96-gR-rHs" secondAttribute="centerX" id="Npz-YN-FUS"/>
                 <constraint firstItem="U57-ue-y4i" firstAttribute="top" secondItem="l96-gR-rHs" secondAttribute="bottom" constant="8" id="OP0-Gt-BxR"/>
                 <constraint firstItem="l96-gR-rHs" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="nFt-cc-Jlu"/>
@@ -78,7 +70,7 @@
         </view>
     </objects>
     <resources>
-        <image name="dust2" width="249" height="222"/>
+        <image name="dust" width="249" height="222"/>
         <image name="rover" width="247" height="249"/>
     </resources>
 </document>

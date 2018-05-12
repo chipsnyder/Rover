@@ -12,6 +12,8 @@ import UIKit
 
     @IBOutlet var contentView: UIView!
     @IBOutlet weak var roverName: UILabel!
+    @IBOutlet weak var exhaust: UIImageView!
+    
     @IBInspectable var name: String? {
         didSet { roverName.text = name }
     }
@@ -31,5 +33,9 @@ import UIKit
         nib.instantiate(withOwner: self, options: nil)
         contentView.frame = bounds
         addSubview(contentView)
+    }
+    
+    func animateMoving(animate: Bool) {
+        exhaust.isHidden = !animate
     }
 }

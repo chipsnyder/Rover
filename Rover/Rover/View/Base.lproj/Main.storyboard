@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="UTh-lU-dXb">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Rover-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="MarsViewController" customModule="Rover" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rf3-yR-Zmu">
+                                <rect key="frame" x="0.0" y="203" width="375" height="464"/>
+                                <color key="backgroundColor" red="1" green="0.27058823529411763" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <imageView clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="deathStar" translatesAutoresizingMaskIntoConstraints="NO" id="b0C-mM-9U5">
+                                <rect key="frame" x="16" y="64" width="75" height="75"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="b0C-mM-9U5" secondAttribute="height" multiplier="1:1" id="DAC-HF-fXp"/>
+                                    <constraint firstAttribute="width" constant="75" id="TVk-ks-bvd"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bigHills" translatesAutoresizingMaskIntoConstraints="NO" id="sMR-XA-Kzk">
+                                <rect key="frame" x="287" y="282" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="sMR-XA-Kzk" secondAttribute="height" multiplier="1:1" id="Kwd-HV-IM6"/>
+                                    <constraint firstAttribute="width" constant="50" id="M6L-Jk-H9m"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bigHills" translatesAutoresizingMaskIntoConstraints="NO" id="5LF-yR-H0O">
+                                <rect key="frame" x="58" y="445" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="2Pc-sC-Gxh"/>
+                                    <constraint firstAttribute="width" secondItem="5LF-yR-H0O" secondAttribute="height" multiplier="1:1" id="CKb-pY-qgQ"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="smallHills" translatesAutoresizingMaskIntoConstraints="NO" id="L2H-UM-bOf">
+                                <rect key="frame" x="28" y="339" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="L2H-UM-bOf" secondAttribute="height" multiplier="1:1" id="QP6-ws-i2C"/>
+                                    <constraint firstAttribute="width" constant="50" id="bO9-TJ-SSB"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="smallHills" translatesAutoresizingMaskIntoConstraints="NO" id="muX-F9-BH4">
+                                <rect key="frame" x="263" y="422" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="0cu-d2-fpO"/>
+                                    <constraint firstAttribute="width" secondItem="muX-F9-BH4" secondAttribute="height" multiplier="1:1" id="TdN-vt-XmN"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="smallHills" translatesAutoresizingMaskIntoConstraints="NO" id="ock-9S-VV9">
+                                <rect key="frame" x="223" y="534" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="457-rU-m5t"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="L2H-UM-bOf" firstAttribute="top" secondItem="b0C-mM-9U5" secondAttribute="bottom" constant="200" id="4aq-gU-CeR"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ock-9S-VV9" secondAttribute="trailing" constant="102" id="50N-ro-1h9"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="sMR-XA-Kzk" secondAttribute="trailing" constant="38" id="5mP-qc-EIj"/>
+                            <constraint firstItem="5LF-yR-H0O" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="58" id="Bhv-Rk-KxT"/>
+                            <constraint firstItem="Rf3-yR-Zmu" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="FCZ-wu-TYJ"/>
+                            <constraint firstItem="b0C-mM-9U5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Idz-8I-DCI"/>
+                            <constraint firstItem="b0C-mM-9U5" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="N4t-hm-UwC"/>
+                            <constraint firstItem="Rf3-yR-Zmu" firstAttribute="top" secondItem="b0C-mM-9U5" secondAttribute="bottom" constant="64" id="PFu-7d-HgN"/>
+                            <constraint firstItem="muX-F9-BH4" firstAttribute="top" secondItem="sMR-XA-Kzk" secondAttribute="bottom" constant="90" id="Ssb-UA-lnO"/>
+                            <constraint firstItem="sMR-XA-Kzk" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="218" id="b52-C6-A3w"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ock-9S-VV9" secondAttribute="bottom" constant="83" id="e5Z-2N-128"/>
+                            <constraint firstItem="Rf3-yR-Zmu" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="f6j-29-ZKx"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="muX-F9-BH4" secondAttribute="trailing" constant="62" id="g4s-Oj-1jL"/>
+                            <constraint firstItem="Rf3-yR-Zmu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ngV-so-ORt"/>
+                            <constraint firstItem="L2H-UM-bOf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="28" id="p2R-ea-DLj"/>
+                            <constraint firstItem="5LF-yR-H0O" firstAttribute="top" secondItem="L2H-UM-bOf" secondAttribute="bottom" constant="56" id="v3m-3p-ssr"/>
+                            <constraint firstItem="ock-9S-VV9" firstAttribute="width" secondItem="ock-9S-VV9" secondAttribute="height" multiplier="1:1" id="wrT-kX-1QA"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Rover" largeTitleDisplayMode="never" id="cbc-rI-fki"/>
+                    <connections>
+                        <outlet property="deathStarImageView" destination="b0C-mM-9U5" id="e9Y-yj-FMK"/>
+                        <outlet property="marsBackground" destination="Rf3-yR-Zmu" id="Cl7-9i-NBc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="132.68365817091455"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="HaX-QV-cws">
+            <objects>
+                <navigationController id="UTh-lU-dXb" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" id="Qj0-wD-CCN">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="cQs-8Z-Gxn"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yhv-Bw-5eW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-690" y="133"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bigHills" width="300" height="90"/>
+        <image name="deathStar" width="220" height="180"/>
+        <image name="smallHills" width="256" height="32"/>
+    </resources>
+</document>

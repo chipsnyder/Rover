@@ -53,5 +53,10 @@ Dust by Andres Meneses from the Noun Project
 
 Dust by Andres Meneses from the Noun Project This Image was modified from the one before.
 
+![Stars by Anthony Bossard from the Noun Projectt](images/noun_315722_cc.png)
+
+
+Stars by Anthony Bossard from the Noun Project
+
 
 Icons not mentioned here were either developed by myself or used from Material Design.

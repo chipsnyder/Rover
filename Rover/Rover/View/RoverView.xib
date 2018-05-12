@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RoverView" customModule="Rover" customModuleProvider="target">
+            <connections>
+                <outlet property="contentView" destination="iN0-l3-epB" id="TWV-m2-BDH"/>
+                <outlet property="roverName" destination="U57-ue-y4i" id="iat-Ig-eyC"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="145" height="95"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rover" translatesAutoresizingMaskIntoConstraints="NO" id="l96-gR-rHs">
+                    <rect key="frame" x="37.5" y="0.0" width="70" height="69.5"/>
+                    <color key="tintColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="70" id="MAm-KT-GY7"/>
+                        <constraint firstAttribute="width" secondItem="l96-gR-rHs" secondAttribute="height" multiplier="1:1" id="Pad-DU-n1P"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rover Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U57-ue-y4i">
+                    <rect key="frame" x="32.5" y="77.5" width="81.5" height="17"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="17" id="jfe-e0-HVi"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                    <color key="shadowColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="10"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </label>
+                <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dust2" translatesAutoresizingMaskIntoConstraints="NO" id="H1p-g4-Ug4">
+                    <rect key="frame" x="107.5" y="47.5" width="35" height="22"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="35" id="961-SE-JwR"/>
+                        <constraint firstAttribute="width" secondItem="H1p-g4-Ug4" secondAttribute="height" multiplier="11:7" id="9GA-93-13e"/>
+                    </constraints>
+                </imageView>
+                <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dust2" translatesAutoresizingMaskIntoConstraints="NO" id="jXv-lf-VFv">
+                    <rect key="frame" x="2.5" y="47.5" width="35" height="22"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="35" id="NXt-n9-sdg"/>
+                        <constraint firstAttribute="width" secondItem="jXv-lf-VFv" secondAttribute="height" multiplier="11:7" id="Ocd-1D-ZSv"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="l96-gR-rHs" firstAttribute="leading" secondItem="jXv-lf-VFv" secondAttribute="trailing" id="AoD-Dn-ZEQ"/>
+                <constraint firstItem="H1p-g4-Ug4" firstAttribute="leading" secondItem="l96-gR-rHs" secondAttribute="trailing" id="GG6-N5-Az4"/>
+                <constraint firstItem="l96-gR-rHs" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="KaJ-xS-ZKD"/>
+                <constraint firstItem="jXv-lf-VFv" firstAttribute="bottom" secondItem="l96-gR-rHs" secondAttribute="bottom" id="LdC-AC-sPu"/>
+                <constraint firstItem="U57-ue-y4i" firstAttribute="centerX" secondItem="l96-gR-rHs" secondAttribute="centerX" id="Npz-YN-FUS"/>
+                <constraint firstItem="U57-ue-y4i" firstAttribute="top" secondItem="l96-gR-rHs" secondAttribute="bottom" constant="8" id="OP0-Gt-BxR"/>
+                <constraint firstItem="l96-gR-rHs" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="nFt-cc-Jlu"/>
+                <constraint firstItem="H1p-g4-Ug4" firstAttribute="baseline" secondItem="l96-gR-rHs" secondAttribute="baseline" id="zQs-aV-AVE"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="237.5" y="-144.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="dust2" width="249" height="222"/>
+        <image name="rover" width="247" height="249"/>
+    </resources>
+</document>

@@ -16,8 +16,8 @@ class MarsViewController: UIViewController {
     let marsBottomTone = UIColor(red: 234.0/255.0, green: 67.0/255.0, blue: 53.0/255.0, alpha: 1.0)
     let marsTopTone = UIColor(red: 255.0/255.0, green: 69.0/255.0, blue: 0, alpha: 1.0)
     
-    let spaceBottomTone = UIColor(red: 2.0/255.0, green: 22.0/255.0, blue: 49.0/255.0, alpha: 1.0)
-    let spaceTopTone = UIColor(red: 5.0/255.0, green: 55.0/255.0, blue: 123.0/255.0, alpha: 1.0)
+    let spaceBottomTone = UIColor(red: 5.0/255.0, green: 55.0/255.0, blue: 123.0/255.0, alpha: 1.0)
+    let spaceTopTone = UIColor(red: 3.0/255.0, green: 33.0/255.0, blue: 74.0/255.0, alpha: 1.0)
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,7 +37,7 @@ class MarsViewController: UIViewController {
             let deathStarImage = deathStarImageView.image {
             
             deathStarImageView.image = deathStarImage.withRenderingMode(.alwaysTemplate)
-            deathStarImageView.tintColor = UIColor.lightText
+            deathStarImageView.tintColor = UIColor.groupTableViewBackground
         }
     }
 }

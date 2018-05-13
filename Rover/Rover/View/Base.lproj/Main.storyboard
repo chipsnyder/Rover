@@ -146,11 +146,105 @@
                         <outlet property="marsBackground" destination="Rf3-yR-Zmu" id="Cl7-9i-NBc"/>
                         <outlet property="opportunityRover" destination="cHG-t1-otc" id="n9E-zU-LuJ"/>
                         <outlet property="spiritRover" destination="9AO-nD-5p5" id="B1J-jn-uvd"/>
+                        <segue destination="9WJ-dP-Jpe" kind="show" identifier="pushRover" id="7sq-Tr-05X"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="136.80000000000001" y="132.68365817091455"/>
+        </scene>
+        <!--Rover Camera View Controller-->
+        <scene sceneID="nHm-bt-mbB">
+            <objects>
+                <viewController id="9WJ-dP-Jpe" customClass="RoverCameraViewController" customModule="Rover" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eiP-fm-YHf">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6jW-cw-odc">
+                                <rect key="frame" x="0.0" y="164" width="375" height="503"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SBe-o7-QKw">
+                                        <rect key="frame" x="77" y="25" width="221" height="36"/>
+                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="36" id="AV2-YP-zFy"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="15"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <inset key="titleEdgeInsets" minX="5" minY="0.0" maxX="5" maxY="0.0"/>
+                                        <state key="normal" title="Front Hazard Avoidance Camera">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="cameraButtonSelected:" destination="9WJ-dP-Jpe" eventType="touchUpInside" id="T2f-Au-1iI"/>
+                                        </connections>
+                                    </button>
+                                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="3We-F1-eBc">
+                                        <rect key="frame" x="8" y="86" width="359" height="409"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="h7h-C6-RmC">
+                                            <size key="itemSize" width="50" height="50"/>
+                                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        </collectionViewFlowLayout>
+                                        <cells>
+                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="roverImage" id="cAp-eK-Qjl">
+                                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                </view>
+                                            </collectionViewCell>
+                                        </cells>
+                                    </collectionView>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.27058823529999998" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="SBe-o7-QKw" firstAttribute="centerX" secondItem="6jW-cw-odc" secondAttribute="centerX" id="0AZ-WJ-kGC"/>
+                                    <constraint firstAttribute="trailing" secondItem="3We-F1-eBc" secondAttribute="trailing" constant="8" id="GNQ-0a-Z8b"/>
+                                    <constraint firstItem="3We-F1-eBc" firstAttribute="leading" secondItem="6jW-cw-odc" secondAttribute="leading" constant="8" id="P9K-9s-M6V"/>
+                                    <constraint firstItem="3We-F1-eBc" firstAttribute="top" secondItem="SBe-o7-QKw" secondAttribute="bottom" constant="25" id="iCb-bj-k7U"/>
+                                    <constraint firstItem="SBe-o7-QKw" firstAttribute="top" secondItem="6jW-cw-odc" secondAttribute="top" constant="25" id="jUs-mr-7Fu"/>
+                                    <constraint firstAttribute="bottom" secondItem="3We-F1-eBc" secondAttribute="bottom" constant="8" id="zYx-rD-Ib7"/>
+                                </constraints>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rover" translatesAutoresizingMaskIntoConstraints="NO" id="7Nw-mW-KgX">
+                                <rect key="frame" x="255" y="97" width="120" height="67"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="A9l-Ej-uQU"/>
+                                    <constraint firstAttribute="height" constant="67" id="YME-Od-rBd"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="6jW-cw-odc" firstAttribute="bottom" secondItem="7Vx-MM-kYf" secondAttribute="bottom" id="3OQ-DE-gbm"/>
+                            <constraint firstItem="6jW-cw-odc" firstAttribute="top" secondItem="7Vx-MM-kYf" secondAttribute="top" constant="100" id="9mh-i3-WgP"/>
+                            <constraint firstItem="6jW-cw-odc" firstAttribute="top" secondItem="7Nw-mW-KgX" secondAttribute="bottom" id="DO8-Vc-2Rg"/>
+                            <constraint firstItem="7Nw-mW-KgX" firstAttribute="trailing" secondItem="7Vx-MM-kYf" secondAttribute="trailing" id="baS-N5-dUR"/>
+                            <constraint firstItem="6jW-cw-odc" firstAttribute="leading" secondItem="7Vx-MM-kYf" secondAttribute="leading" id="g7w-zS-9F9"/>
+                            <constraint firstItem="6jW-cw-odc" firstAttribute="trailing" secondItem="7Vx-MM-kYf" secondAttribute="trailing" id="gVT-Gc-Na7"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="7Vx-MM-kYf"/>
+                    </view>
+                    <connections>
+                        <outlet property="cameraButton" destination="SBe-o7-QKw" id="LJc-CL-gFJ"/>
+                        <outlet property="marsBackground" destination="6jW-cw-odc" id="Jka-mb-LQj"/>
+                        <outlet property="roverImageView" destination="7Nw-mW-KgX" id="Aey-mc-e8U"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9JY-Dp-MQI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1088.8" y="132.68365817091455"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="HaX-QV-cws">
@@ -159,6 +253,7 @@
                     <navigationBar key="navigationBar" opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" id="Qj0-wD-CCN">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </navigationBar>
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="cQs-8Z-Gxn"/>
@@ -172,6 +267,7 @@
     <resources>
         <image name="bigHills" width="300" height="90"/>
         <image name="deathStar" width="220" height="180"/>
+        <image name="rover" width="247" height="249"/>
         <image name="smallHills" width="256" height="32"/>
         <image name="stars" width="1000" height="450"/>
     </resources>

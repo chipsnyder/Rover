@@ -17,18 +17,17 @@ class MarsViewController: UIViewController {
     @IBOutlet weak var spiritRover: RoverView!
     var rotationTimer:Timer?
     
-    let marsBottomTone = UIColor(red: 234.0/255.0, green: 67.0/255.0, blue: 53.0/255.0, alpha: 1.0)
-    let marsTopTone = UIColor(red: 255.0/255.0, green: 69.0/255.0, blue: 0, alpha: 1.0)
-    let spaceBottomTone = UIColor(red: 5.0/255.0, green: 55.0/255.0, blue: 123.0/255.0, alpha: 1.0)
-    let spaceTopTone = UIColor(red: 3.0/255.0, green: 33.0/255.0, blue: 74.0/255.0, alpha: 1.0)
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         marsBackground.curveTopEdge(magnitude: 0.5)
-        marsBackground.addLinearGradient(bottom: marsBottomTone, top: marsTopTone)
+        marsBackground.addLinearGradient(bottom: Constants.Colors.marsBottomTone, top: Constants.Colors.marsTopTone)
+        view.addLinearGradient(bottom: Constants.Colors.spaceBottomTone, top: Constants.Colors.spaceTopTone, start:CGPoint(x: 0.9, y: 0.0))
+        opportunityRover.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(opportunityRoverSelected)))
         
-        view.addLinearGradient(bottom: spaceBottomTone, top: spaceTopTone, start:CGPoint(x: 0.9, y: 0.0))
+        curiousityRover.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(curiousityRoverSelected)))
+        
+        spiritRover.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(spiritRoverSelected)))
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -51,7 +50,7 @@ class MarsViewController: UIViewController {
     }
     
     @objc func rotateRovers() {
-    
+        
         let curiousityRoverPoint = curiousityRover.center
         UIView.animate(withDuration: 1.0, delay: 1.0, options: .curveLinear, animations: {
             
@@ -66,8 +65,24 @@ class MarsViewController: UIViewController {
         })
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+    }
+    
     func animateRover(source: RoverView, destination:CGPoint) {
         source.animateMoving(animate: true)
         source.center = destination
+    }
+    
+    @objc func opportunityRoverSelected() {
+        performSegue(withIdentifier: "pushRover", sender: Rovers.opportunity)
+    }
+    
+    @objc func curiousityRoverSelected() {
+        performSegue(withIdentifier: "pushRover", sender: Rovers.curiousity)
+    }
+    
+    @objc func spiritRoverSelected() {
+        performSegue(withIdentifier: "pushRover", sender: Rovers.spirit)
     }
 }

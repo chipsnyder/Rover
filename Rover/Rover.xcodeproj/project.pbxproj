@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		0430028320A68C7A007F958F /* RoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0430028220A68C7A007F958F /* RoverView.swift */; };
 		049E1FDD20A7890A004518DB /* UIView+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049E1FDC20A7890A004518DB /* UIView+extensions.swift */; };
+		049E1FDF20A7AA11004518DB /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049E1FDE20A7AA11004518DB /* Constants.swift */; };
+		049E1FE120A7B3F6004518DB /* RoverCameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049E1FE020A7B3F6004518DB /* RoverCameraViewController.swift */; };
 		04ACCDDA20A50C6600D78018 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04ACCDD920A50C6600D78018 /* AppDelegate.swift */; };
 		04ACCDDC20A50C6600D78018 /* MarsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04ACCDDB20A50C6600D78018 /* MarsViewController.swift */; };
 		04ACCDDF20A50C6600D78018 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04ACCDDD20A50C6600D78018 /* Main.storyboard */; };
@@ -43,6 +45,8 @@
 /* Begin PBXFileReference section */
 		0430028220A68C7A007F958F /* RoverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoverView.swift; sourceTree = "<group>"; };
 		049E1FDC20A7890A004518DB /* UIView+extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+extensions.swift"; sourceTree = "<group>"; };
+		049E1FDE20A7AA11004518DB /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		049E1FE020A7B3F6004518DB /* RoverCameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoverCameraViewController.swift; sourceTree = "<group>"; };
 		04ACCDD620A50C6600D78018 /* Rover.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Rover.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04ACCDD920A50C6600D78018 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		04ACCDDB20A50C6600D78018 /* MarsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarsViewController.swift; sourceTree = "<group>"; };
@@ -123,6 +127,7 @@
 			isa = PBXGroup;
 			children = (
 				04ACCDD920A50C6600D78018 /* AppDelegate.swift */,
+				049E1FDE20A7AA11004518DB /* Constants.swift */,
 				04ACCE0720A50C8500D78018 /* View */,
 				04ACCE0820A50C9A00D78018 /* Interactor */,
 				04ACCE0920A50CA500D78018 /* Presenter */,
@@ -174,6 +179,7 @@
 			isa = PBXGroup;
 			children = (
 				04ACCDDB20A50C6600D78018 /* MarsViewController.swift */,
+				049E1FE020A7B3F6004518DB /* RoverCameraViewController.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -439,7 +445,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				049E1FDF20A7AA11004518DB /* Constants.swift in Sources */,
 				04ACCDDC20A50C6600D78018 /* MarsViewController.swift in Sources */,
+				049E1FE120A7B3F6004518DB /* RoverCameraViewController.swift in Sources */,
 				0430028320A68C7A007F958F /* RoverView.swift in Sources */,
 				049E1FDD20A7890A004518DB /* UIView+extensions.swift in Sources */,
 				04ACCDDA20A50C6600D78018 /* AppDelegate.swift in Sources */,

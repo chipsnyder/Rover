@@ -21,6 +21,26 @@ class APINetworkInteractor: NSObject {
         super.init()
     }
     
+    func getImageData(imageURLString:String, completion:@escaping (_ result:Data?, _ error:Error?) -> Void) -> URLSessionDataTask? {
+        
+        if let url = URL(string: imageURLString) {
+            let task = session.dataTask(with: url) { (data:Data?, _ , error:Error?) in
+                if let error = error {
+                    completion(nil, error)
+                } else {
+                    completion(data, nil)
+                }
+            }
+            
+            task.resume()
+            return task
+        } else {
+            completion(nil, NSError(domain:"Bad Parameters", code: 400, userInfo: nil))
+        }
+        
+        return nil
+    }
+    
     func getImageMetaData(rover:Rovers, page:Int, completion:@escaping (_ result: [RoverImageMetaData]?, _ error:Error?) -> Void) {
         
         if let url = metaDataURL(rover: rover, page: page) {

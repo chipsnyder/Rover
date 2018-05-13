@@ -181,7 +181,6 @@
 		04ACCE0720A50C8500D78018 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				040EF26A20A7C23000511C25 /* CameraImageCollectionViewCell.swift */,
 				04ACCDE220A50C6700D78018 /* LaunchScreen.storyboard */,
 				04ACCDDD20A50C6600D78018 /* Main.storyboard */,
 				0430028220A68C7A007F958F /* RoverView.swift */,
@@ -203,6 +202,7 @@
 		04ACCE0920A50CA500D78018 /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
+				040EF26A20A7C23000511C25 /* CameraImageCollectionViewCell.swift */,
 				04ACCDDB20A50C6600D78018 /* MarsViewController.swift */,
 				049E1FE020A7B3F6004518DB /* RoverCameraViewController.swift */,
 			);

@@ -10,12 +10,15 @@ import UIKit
 
 class RoverCameraViewController: UIViewController {
 
+    static let RoverCameraCellReuseIdentifier = "cameraImageCell"
     @IBOutlet weak var marsBackground: UIView!
     @IBOutlet weak var roverImageView: UIImageView!
+    @IBOutlet weak var collectionView: UICollectionView!
     var roverImageMetaData = [RoverImageMetaData]()
     var roverType = Rovers.opportunity
     var interactor = APINetworkInteractor.shared
     var page = 1
+    var canFetchMore = true
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,12 +40,22 @@ class RoverCameraViewController: UIViewController {
     }
     
     func fetchImageMetaData() {
+        
+        if !canFetchMore {
+            return
+        }
+        
         interactor.getImageMetaData(rover: roverType, page: page) { (imageMetaData:[RoverImageMetaData]?, error:Error?) in
             DispatchQueue.main.async {
                 if error != nil {
                     self.showErrorAlert()
                 } else if let imageMetaData = imageMetaData {
+                    
+                    self.canFetchMore = (imageMetaData.count >= 25) // 25 is the API limit on paging
+                    
                     self.roverImageMetaData.append(contentsOf: imageMetaData)
+                    self.collectionView.reloadData()
+                    self.page = self.page + 1
                 }
             }
         }
@@ -61,3 +74,24 @@ class RoverCameraViewController: UIViewController {
         present(alert, animated: true)
     }
 }
+
+extension RoverCameraViewController : UICollectionViewDataSource {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return roverImageMetaData.count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: RoverCameraViewController.RoverCameraCellReuseIdentifier, for: indexPath) as! CameraImageCollectionViewCell
+        
+        cell.imageMetaData = roverImageMetaData[indexPath.row]
+        
+        if(indexPath.row >= roverImageMetaData.count - 3) {
+            fetchImageMetaData()
+        }
+        
+        return cell
+    }
+    
+
+}
+

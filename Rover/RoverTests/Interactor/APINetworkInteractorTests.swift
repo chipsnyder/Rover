@@ -141,4 +141,23 @@ class APINetworkInteractorTests: XCTestCase {
         let url = testInstance.metaDataURL(rover: .opportunity, page: 2)!
         expect(url.absoluteString).to(equal("https://api.nasa.gov/mars-photos/api/v1/rovers/opportunity/photos?sol=1000&page=2&api_key=TEST_KEY"))
     }
+    
+    func test_getImageData_goodData_itShouldCallCompletionWithObject() {
+        
+        let testData = UIImagePNGRepresentation(UIImage(named: "deathStar")!)
+        
+        partialMockURLSession = PartialMockURLSession(mockData: testData, mockError: nil)
+        testInstance = APINetworkInteractor(session: partialMockURLSession, apiKey: "TEST_KEY")
+        
+        let _ = testInstance.getImageData(imageURLString: "http://mars.jpl.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/01000/opgs/edr/fcam/FLB_486265257EDR_F0481570FHAZ00323M_.JPG"){response,_ in
+            expect(response).to(beIdenticalTo(testData))
+        }
+    }
+    
+    func test_getImageData_badURL_itShouldCallCompletionWithError() {
+            
+        let _ = testInstance.getImageData(imageURLString: ""){_,error in
+            expect(error).toNot(beNil())
+        }
+    }
 }

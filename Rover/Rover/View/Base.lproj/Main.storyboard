@@ -177,14 +177,14 @@
                                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                         </collectionViewFlowLayout>
                                         <cells>
-                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="roverImage" id="cAp-eK-Qjl" customClass="CameraImageCollectionViewCell" customModule="Rover" customModuleProvider="target">
+                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cameraImageCell" id="cAp-eK-Qjl" customClass="CameraImageCollectionViewCell" customModule="Rover" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="18" width="256" height="333"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
                                                     <rect key="frame" x="0.0" y="0.0" width="256" height="333"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
-                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1pr-1G-BfJ">
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1pr-1G-BfJ">
                                                             <rect key="frame" x="0.0" y="0.0" width="256" height="256"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" constant="256" id="rGm-8h-jIk"/>
@@ -217,6 +217,7 @@
                                                 </constraints>
                                                 <size key="customSize" width="256" height="333"/>
                                                 <connections>
+                                                    <outlet property="cameraLabel" destination="h98-OP-6eT" id="2Kg-nK-TRt"/>
                                                     <outlet property="earthDateLabel" destination="kXD-xK-J4n" id="mTc-bV-s7x"/>
                                                     <outlet property="imageView" destination="1pr-1G-BfJ" id="iNE-7V-IDL"/>
                                                 </connections>
@@ -227,6 +228,9 @@
                                                 <integer key="value" value="5"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <outlet property="dataSource" destination="9WJ-dP-Jpe" id="TGl-O9-Xs8"/>
+                                        </connections>
                                     </collectionView>
                                 </subviews>
                                 <color key="backgroundColor" red="1" green="0.27058823529999998" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -257,6 +261,7 @@
                         <viewLayoutGuide key="safeArea" id="7Vx-MM-kYf"/>
                     </view>
                     <connections>
+                        <outlet property="collectionView" destination="3We-F1-eBc" id="Qua-Wc-mir"/>
                         <outlet property="marsBackground" destination="6jW-cw-odc" id="Jka-mb-LQj"/>
                         <outlet property="roverImageView" destination="7Nw-mW-KgX" id="Aey-mc-e8U"/>
                     </connections>

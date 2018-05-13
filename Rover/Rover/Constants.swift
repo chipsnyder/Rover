@@ -9,7 +9,9 @@
 import UIKit
 
 struct Constants {
-    static let photosAPIFormat = "https://api.nasa.gov/mars-photos/api/v1/rovers/%@/photos?sol=1000&camera%@&page=%d&api_key=%@"
+    static let photosAPIFormat = "https://api.nasa.gov/mars-photos/api/v1/rovers/%@/photos?sol=1000&page=%d&api_key=%@"
+    static let apiLookupKey = "nasaAPIKey"
+    static let apiDemoKey = "DEMO_KEY"
     
     struct Colors {
         static let marsBottomTone = UIColor(red: 234.0/255.0, green: 67.0/255.0, blue: 53.0/255.0, alpha: 1.0)
@@ -20,19 +22,7 @@ struct Constants {
 }
 
 enum Rovers : String {
-    case curiousity
+    case curiosity
     case opportunity
     case spirit
-}
-
-enum Cameras : String {
-    case fhaz = "Front Hazard Avoidance Camera"
-    case rhaz = "Rear Hazard Avoidance Camera"
-    case mast = "Mast Camera"
-    case chemcam = "Chemistry and Camera Complex"
-    case mahli = "Mars Hand Lens Imager"
-    case mardi = "Mars Descent Imager"
-    case navcam = "Navigation Camera"
-    case pancam = "Panoramic Camera"
-    case minites = "Mini-TES"
 }

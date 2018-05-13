@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		040EF26B20A7C23000511C25 /* CameraImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040EF26A20A7C23000511C25 /* CameraImageCollectionViewCell.swift */; };
+		040EF26D20A7C44B00511C25 /* APINetworkInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040EF26C20A7C44B00511C25 /* APINetworkInteractor.swift */; };
+		040EF26F20A7CDE400511C25 /* RoverImageMetaData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040EF26E20A7CDE400511C25 /* RoverImageMetaData.swift */; };
+		040EF27120A7D7BF00511C25 /* FirebaseInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040EF27020A7D7BF00511C25 /* FirebaseInteractor.swift */; };
+		040EF27420A7E3B200511C25 /* APINetworkInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040EF27320A7E3B200511C25 /* APINetworkInteractorTests.swift */; };
 		0430028320A68C7A007F958F /* RoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0430028220A68C7A007F958F /* RoverView.swift */; };
 		049E1FDD20A7890A004518DB /* UIView+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049E1FDC20A7890A004518DB /* UIView+extensions.swift */; };
 		049E1FDF20A7AA11004518DB /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049E1FDE20A7AA11004518DB /* Constants.swift */; };
@@ -16,13 +21,14 @@
 		04ACCDDF20A50C6600D78018 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04ACCDDD20A50C6600D78018 /* Main.storyboard */; };
 		04ACCDE120A50C6700D78018 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04ACCDE020A50C6700D78018 /* Assets.xcassets */; };
 		04ACCDE420A50C6700D78018 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04ACCDE220A50C6700D78018 /* LaunchScreen.storyboard */; };
-		04ACCDEF20A50C6700D78018 /* RoverTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04ACCDEE20A50C6700D78018 /* RoverTests.swift */; };
 		04ACCDFA20A50C6700D78018 /* RoverUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04ACCDF920A50C6700D78018 /* RoverUITests.swift */; };
 		04ACCE0E20A552A800D78018 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 04ACCE0D20A552A800D78018 /* GoogleService-Info.plist */; };
 		04B2D49220A620770019E5EB /* RoverView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04B2D49120A620770019E5EB /* RoverView.xib */; };
-		2A7DE00974EF2C8431279073 /* Pods_Rover.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D2CAFF806E2BEAB5FE10787 /* Pods_Rover.framework */; };
-		698615D92F89F5D6F5DB74C5 /* Pods_RoverUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EF3255C3DA7A1DB3242DBE5 /* Pods_RoverUITests.framework */; };
-		C29D8C7ADE5521986F4AD36C /* Pods_RoverTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF013840A6331C848997CC0D /* Pods_RoverTests.framework */; };
+		04EC094D20A7F83600DAB7E4 /* goodData.json in Resources */ = {isa = PBXBuildFile; fileRef = 04EC094C20A7F83600DAB7E4 /* goodData.json */; };
+		3E23582EB670223E567E6673 /* Pods_Rover.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 540CE61EB4D6FE3B3BE0813F /* Pods_Rover.framework */; };
+		7C8E9E9FACF976338E24A47B /* Pods_RoverTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B31E23F12B1B0CDF54E438F /* Pods_RoverTests.framework */; };
+		906BFA96EFA04CFC4AFE138E /* Pods_RoverUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42BA374F421177D74E731380 /* Pods_RoverUITests.framework */; };
+		F2A9052A32851E2F8F618D10 /* Pods_Rover.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04EC094920A7F4D300DAB7E4 /* Pods_Rover.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +49,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		040EF26A20A7C23000511C25 /* CameraImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraImageCollectionViewCell.swift; sourceTree = "<group>"; };
+		040EF26C20A7C44B00511C25 /* APINetworkInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APINetworkInteractor.swift; sourceTree = "<group>"; };
+		040EF26E20A7CDE400511C25 /* RoverImageMetaData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoverImageMetaData.swift; sourceTree = "<group>"; };
+		040EF27020A7D7BF00511C25 /* FirebaseInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseInteractor.swift; sourceTree = "<group>"; };
+		040EF27320A7E3B200511C25 /* APINetworkInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APINetworkInteractorTests.swift; sourceTree = "<group>"; };
 		0430028220A68C7A007F958F /* RoverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoverView.swift; sourceTree = "<group>"; };
 		049E1FDC20A7890A004518DB /* UIView+extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+extensions.swift"; sourceTree = "<group>"; };
 		049E1FDE20A7AA11004518DB /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
@@ -55,22 +66,23 @@
 		04ACCDE320A50C6700D78018 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		04ACCDE520A50C6700D78018 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		04ACCDEA20A50C6700D78018 /* RoverTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RoverTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		04ACCDEE20A50C6700D78018 /* RoverTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoverTests.swift; sourceTree = "<group>"; };
 		04ACCDF020A50C6700D78018 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		04ACCDF520A50C6700D78018 /* RoverUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RoverUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		04ACCDF920A50C6700D78018 /* RoverUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoverUITests.swift; sourceTree = "<group>"; };
 		04ACCDFB20A50C6700D78018 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		04ACCE0D20A552A800D78018 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		04B2D49120A620770019E5EB /* RoverView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RoverView.xib; sourceTree = "<group>"; };
-		0F343A4330CBD4E677A4B267 /* Pods-RoverUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RoverUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RoverUITests/Pods-RoverUITests.release.xcconfig"; sourceTree = "<group>"; };
-		221837BC929CF13308820557 /* Pods-RoverTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RoverTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RoverTests/Pods-RoverTests.debug.xcconfig"; sourceTree = "<group>"; };
-		3EF3255C3DA7A1DB3242DBE5 /* Pods_RoverUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RoverUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		4D2CAFF806E2BEAB5FE10787 /* Pods_Rover.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Rover.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9441B22F35C6BB1968566E87 /* Pods-RoverTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RoverTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RoverTests/Pods-RoverTests.release.xcconfig"; sourceTree = "<group>"; };
-		A1C2EE043B39B0459621B299 /* Pods-Rover.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rover.release.xcconfig"; path = "Pods/Target Support Files/Pods-Rover/Pods-Rover.release.xcconfig"; sourceTree = "<group>"; };
-		B6721210D6EBBAC39CFF1634 /* Pods-RoverUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RoverUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RoverUITests/Pods-RoverUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		BD4104ABCEC3779FC829414C /* Pods-Rover.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rover.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Rover/Pods-Rover.debug.xcconfig"; sourceTree = "<group>"; };
-		CF013840A6331C848997CC0D /* Pods_RoverTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RoverTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		04EC094920A7F4D300DAB7E4 /* Pods_Rover.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_Rover.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		04EC094C20A7F83600DAB7E4 /* goodData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = goodData.json; sourceTree = "<group>"; };
+		3CFBE5BFAF21FC73853AEE47 /* Pods-Rover.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rover.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Rover/Pods-Rover.debug.xcconfig"; sourceTree = "<group>"; };
+		42BA374F421177D74E731380 /* Pods_RoverUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RoverUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B31E23F12B1B0CDF54E438F /* Pods_RoverTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RoverTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		540CE61EB4D6FE3B3BE0813F /* Pods_Rover.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Rover.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		55D255A8209AE6CF171FC625 /* Pods-RoverUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RoverUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RoverUITests/Pods-RoverUITests.release.xcconfig"; sourceTree = "<group>"; };
+		9357A3C9CAA6C73123604B35 /* Pods-RoverTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RoverTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RoverTests/Pods-RoverTests.release.xcconfig"; sourceTree = "<group>"; };
+		9FAFABB5CEC148A8601CA68C /* Pods-RoverUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RoverUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RoverUITests/Pods-RoverUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		E0E9F6D791F77194E208EDF1 /* Pods-Rover.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rover.release.xcconfig"; path = "Pods/Target Support Files/Pods-Rover/Pods-Rover.release.xcconfig"; sourceTree = "<group>"; };
+		EB670B70C380BF194AFB3CF2 /* Pods-RoverTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RoverTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RoverTests/Pods-RoverTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,7 +90,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2A7DE00974EF2C8431279073 /* Pods_Rover.framework in Frameworks */,
+				3E23582EB670223E567E6673 /* Pods_Rover.framework in Frameworks */,
+				F2A9052A32851E2F8F618D10 /* Pods_Rover.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,7 +99,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C29D8C7ADE5521986F4AD36C /* Pods_RoverTests.framework in Frameworks */,
+				7C8E9E9FACF976338E24A47B /* Pods_RoverTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,13 +107,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				698615D92F89F5D6F5DB74C5 /* Pods_RoverUITests.framework in Frameworks */,
+				906BFA96EFA04CFC4AFE138E /* Pods_RoverUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		040EF27220A7E37D00511C25 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				040EF27320A7E3B200511C25 /* APINetworkInteractorTests.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
 		04ACCDCD20A50C6600D78018 = {
 			isa = PBXGroup;
 			children = (
@@ -108,8 +129,8 @@
 				04ACCDED20A50C6700D78018 /* RoverTests */,
 				04ACCDF820A50C6700D78018 /* RoverUITests */,
 				04ACCDD720A50C6600D78018 /* Products */,
-				B75C1CDD706848866A4FF930 /* Pods */,
-				532CD3D959D3FF92BF8CE157 /* Frameworks */,
+				EBF9D31C2553B37F6281FDEE /* Pods */,
+				5A7A06B2299B365CF2F4F110 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -141,8 +162,9 @@
 		04ACCDED20A50C6700D78018 /* RoverTests */ = {
 			isa = PBXGroup;
 			children = (
-				04ACCDEE20A50C6700D78018 /* RoverTests.swift */,
 				04ACCDF020A50C6700D78018 /* Info.plist */,
+				040EF27220A7E37D00511C25 /* Interactor */,
+				04EC094B20A7F81200DAB7E4 /* Sample Data */,
 			);
 			path = RoverTests;
 			sourceTree = "<group>";
@@ -159,10 +181,11 @@
 		04ACCE0720A50C8500D78018 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				04ACCDDD20A50C6600D78018 /* Main.storyboard */,
+				040EF26A20A7C23000511C25 /* CameraImageCollectionViewCell.swift */,
 				04ACCDE220A50C6700D78018 /* LaunchScreen.storyboard */,
-				04B2D49120A620770019E5EB /* RoverView.xib */,
+				04ACCDDD20A50C6600D78018 /* Main.storyboard */,
 				0430028220A68C7A007F958F /* RoverView.swift */,
+				04B2D49120A620770019E5EB /* RoverView.xib */,
 				049E1FDC20A7890A004518DB /* UIView+extensions.swift */,
 			);
 			path = View;
@@ -171,6 +194,8 @@
 		04ACCE0820A50C9A00D78018 /* Interactor */ = {
 			isa = PBXGroup;
 			children = (
+				040EF26C20A7C44B00511C25 /* APINetworkInteractor.swift */,
+				040EF27020A7D7BF00511C25 /* FirebaseInteractor.swift */,
 			);
 			path = Interactor;
 			sourceTree = "<group>";
@@ -187,6 +212,7 @@
 		04ACCE0A20A50CC100D78018 /* Entity */ = {
 			isa = PBXGroup;
 			children = (
+				040EF26E20A7CDE400511C25 /* RoverImageMetaData.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -208,25 +234,34 @@
 			path = "Support Files";
 			sourceTree = "<group>";
 		};
-		532CD3D959D3FF92BF8CE157 /* Frameworks */ = {
+		04EC094B20A7F81200DAB7E4 /* Sample Data */ = {
 			isa = PBXGroup;
 			children = (
-				4D2CAFF806E2BEAB5FE10787 /* Pods_Rover.framework */,
-				CF013840A6331C848997CC0D /* Pods_RoverTests.framework */,
-				3EF3255C3DA7A1DB3242DBE5 /* Pods_RoverUITests.framework */,
+				04EC094C20A7F83600DAB7E4 /* goodData.json */,
+			);
+			path = "Sample Data";
+			sourceTree = "<group>";
+		};
+		5A7A06B2299B365CF2F4F110 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				04EC094920A7F4D300DAB7E4 /* Pods_Rover.framework */,
+				540CE61EB4D6FE3B3BE0813F /* Pods_Rover.framework */,
+				4B31E23F12B1B0CDF54E438F /* Pods_RoverTests.framework */,
+				42BA374F421177D74E731380 /* Pods_RoverUITests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		B75C1CDD706848866A4FF930 /* Pods */ = {
+		EBF9D31C2553B37F6281FDEE /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				BD4104ABCEC3779FC829414C /* Pods-Rover.debug.xcconfig */,
-				A1C2EE043B39B0459621B299 /* Pods-Rover.release.xcconfig */,
-				221837BC929CF13308820557 /* Pods-RoverTests.debug.xcconfig */,
-				9441B22F35C6BB1968566E87 /* Pods-RoverTests.release.xcconfig */,
-				B6721210D6EBBAC39CFF1634 /* Pods-RoverUITests.debug.xcconfig */,
-				0F343A4330CBD4E677A4B267 /* Pods-RoverUITests.release.xcconfig */,
+				3CFBE5BFAF21FC73853AEE47 /* Pods-Rover.debug.xcconfig */,
+				E0E9F6D791F77194E208EDF1 /* Pods-Rover.release.xcconfig */,
+				EB670B70C380BF194AFB3CF2 /* Pods-RoverTests.debug.xcconfig */,
+				9357A3C9CAA6C73123604B35 /* Pods-RoverTests.release.xcconfig */,
+				9FAFABB5CEC148A8601CA68C /* Pods-RoverUITests.debug.xcconfig */,
+				55D255A8209AE6CF171FC625 /* Pods-RoverUITests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -238,11 +273,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 04ACCDFE20A50C6700D78018 /* Build configuration list for PBXNativeTarget "Rover" */;
 			buildPhases = (
-				70E6244F1FAEEB0833BB0057 /* [CP] Check Pods Manifest.lock */,
+				215A6FF802D697F6D3E18830 /* [CP] Check Pods Manifest.lock */,
 				04ACCDD220A50C6600D78018 /* Sources */,
 				04ACCDD320A50C6600D78018 /* Frameworks */,
 				04ACCDD420A50C6600D78018 /* Resources */,
-				1130B585C05321A7769B0F02 /* [CP] Embed Pods Frameworks */,
+				E17CC8296D7B2B0E6975688D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -257,10 +292,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 04ACCE0120A50C6700D78018 /* Build configuration list for PBXNativeTarget "RoverTests" */;
 			buildPhases = (
-				ABD9EC8B612BA932729A4D87 /* [CP] Check Pods Manifest.lock */,
+				77B6083BA0B11001C69E82B7 /* [CP] Check Pods Manifest.lock */,
 				04ACCDE620A50C6700D78018 /* Sources */,
 				04ACCDE720A50C6700D78018 /* Frameworks */,
 				04ACCDE820A50C6700D78018 /* Resources */,
+				4CDE9605691D9047D3F24A76 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -276,7 +312,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 04ACCE0420A50C6700D78018 /* Build configuration list for PBXNativeTarget "RoverUITests" */;
 			buildPhases = (
-				B1A8851CE88DA3194B036544 /* [CP] Check Pods Manifest.lock */,
+				457BE067AD824313DAD31EF2 /* [CP] Check Pods Manifest.lock */,
 				04ACCDF120A50C6700D78018 /* Sources */,
 				04ACCDF220A50C6700D78018 /* Frameworks */,
 				04ACCDF320A50C6700D78018 /* Resources */,
@@ -351,6 +387,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04EC094D20A7F83600DAB7E4 /* goodData.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -364,27 +401,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		1130B585C05321A7769B0F02 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-Rover/Pods-Rover-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
-				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Rover/Pods-Rover-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		70E6244F1FAEEB0833BB0057 /* [CP] Check Pods Manifest.lock */ = {
+		215A6FF802D697F6D3E18830 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -402,25 +419,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		ABD9EC8B612BA932729A4D87 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-RoverTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		B1A8851CE88DA3194B036544 /* [CP] Check Pods Manifest.lock */ = {
+		457BE067AD824313DAD31EF2 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -438,6 +437,64 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		4CDE9605691D9047D3F24A76 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-RoverTests/Pods-RoverTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RoverTests/Pods-RoverTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		77B6083BA0B11001C69E82B7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RoverTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E17CC8296D7B2B0E6975688D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Rover/Pods-Rover-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Rover/Pods-Rover-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -446,11 +503,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				049E1FDF20A7AA11004518DB /* Constants.swift in Sources */,
+				040EF26B20A7C23000511C25 /* CameraImageCollectionViewCell.swift in Sources */,
 				04ACCDDC20A50C6600D78018 /* MarsViewController.swift in Sources */,
 				049E1FE120A7B3F6004518DB /* RoverCameraViewController.swift in Sources */,
+				040EF26D20A7C44B00511C25 /* APINetworkInteractor.swift in Sources */,
 				0430028320A68C7A007F958F /* RoverView.swift in Sources */,
 				049E1FDD20A7890A004518DB /* UIView+extensions.swift in Sources */,
+				040EF27120A7D7BF00511C25 /* FirebaseInteractor.swift in Sources */,
 				04ACCDDA20A50C6600D78018 /* AppDelegate.swift in Sources */,
+				040EF26F20A7CDE400511C25 /* RoverImageMetaData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -458,7 +519,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04ACCDEF20A50C6700D78018 /* RoverTests.swift in Sources */,
+				040EF27420A7E3B200511C25 /* APINetworkInteractorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -558,7 +619,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
-				ONLY_ACTIVE_ARCH = YES;
+				ONLY_ACTIVE_ARCH = NO;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -621,7 +682,7 @@
 		};
 		04ACCDFF20A50C6700D78018 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BD4104ABCEC3779FC829414C /* Pods-Rover.debug.xcconfig */;
+			baseConfigurationReference = 3CFBE5BFAF21FC73853AEE47 /* Pods-Rover.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -640,7 +701,7 @@
 		};
 		04ACCE0020A50C6700D78018 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A1C2EE043B39B0459621B299 /* Pods-Rover.release.xcconfig */;
+			baseConfigurationReference = E0E9F6D791F77194E208EDF1 /* Pods-Rover.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -659,9 +720,8 @@
 		};
 		04ACCE0220A50C6700D78018 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 221837BC929CF13308820557 /* Pods-RoverTests.debug.xcconfig */;
+			baseConfigurationReference = EB670B70C380BF194AFB3CF2 /* Pods-RoverTests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = RoverTests/Info.plist;
@@ -680,9 +740,8 @@
 		};
 		04ACCE0320A50C6700D78018 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9441B22F35C6BB1968566E87 /* Pods-RoverTests.release.xcconfig */;
+			baseConfigurationReference = 9357A3C9CAA6C73123604B35 /* Pods-RoverTests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = RoverTests/Info.plist;
@@ -701,9 +760,8 @@
 		};
 		04ACCE0520A50C6700D78018 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B6721210D6EBBAC39CFF1634 /* Pods-RoverUITests.debug.xcconfig */;
+			baseConfigurationReference = 9FAFABB5CEC148A8601CA68C /* Pods-RoverUITests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = RoverUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -721,9 +779,8 @@
 		};
 		04ACCE0620A50C6700D78018 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0F343A4330CBD4E677A4B267 /* Pods-RoverUITests.release.xcconfig */;
+			baseConfigurationReference = 55D255A8209AE6CF171FC625 /* Pods-RoverUITests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = RoverUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (

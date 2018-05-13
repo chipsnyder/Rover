@@ -164,56 +164,76 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6jW-cw-odc">
                                 <rect key="frame" x="0.0" y="164" width="375" height="503"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SBe-o7-QKw">
-                                        <rect key="frame" x="77" y="25" width="221" height="36"/>
-                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceHorizontal="YES" showsVerticalScrollIndicator="NO" indicatorStyle="black" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="3We-F1-eBc">
+                                        <rect key="frame" x="8" y="67" width="359" height="369"/>
+                                        <color key="backgroundColor" white="0.33333333333333331" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="36" id="AV2-YP-zFy"/>
+                                            <constraint firstAttribute="height" constant="369" id="7J6-56-SeY"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="15"/>
-                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <inset key="titleEdgeInsets" minX="5" minY="0.0" maxX="5" maxY="0.0"/>
-                                        <state key="normal" title="Front Hazard Avoidance Camera">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                <integer key="value" value="5"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                        <connections>
-                                            <action selector="cameraButtonSelected:" destination="9WJ-dP-Jpe" eventType="touchUpInside" id="T2f-Au-1iI"/>
-                                        </connections>
-                                    </button>
-                                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="3We-F1-eBc">
-                                        <rect key="frame" x="8" y="86" width="359" height="409"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="h7h-C6-RmC">
-                                            <size key="itemSize" width="50" height="50"/>
+                                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="h7h-C6-RmC">
+                                            <size key="itemSize" width="256" height="333"/>
                                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                         </collectionViewFlowLayout>
                                         <cells>
-                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="roverImage" id="cAp-eK-Qjl">
-                                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="roverImage" id="cAp-eK-Qjl" customClass="CameraImageCollectionViewCell" customModule="Rover" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="18" width="256" height="333"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                                                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="256" height="333"/>
                                                     <autoresizingMask key="autoresizingMask"/>
+                                                    <subviews>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1pr-1G-BfJ">
+                                                            <rect key="frame" x="0.0" y="0.0" width="256" height="256"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="256" id="rGm-8h-jIk"/>
+                                                                <constraint firstAttribute="height" constant="256" id="yS2-kb-TG1"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Earth Date: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kXD-xK-J4n">
+                                                            <rect key="frame" x="83" y="292.5" width="90.5" height="20.5"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Camera" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h98-OP-6eT">
+                                                            <rect key="frame" x="98" y="264" width="60" height="20.5"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
                                                 </view>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstItem="1pr-1G-BfJ" firstAttribute="leading" secondItem="cAp-eK-Qjl" secondAttribute="leading" id="EFc-4Z-qpN"/>
+                                                    <constraint firstItem="h98-OP-6eT" firstAttribute="top" secondItem="1pr-1G-BfJ" secondAttribute="bottom" constant="8" id="Gu8-kC-kpZ"/>
+                                                    <constraint firstItem="kXD-xK-J4n" firstAttribute="centerX" secondItem="cAp-eK-Qjl" secondAttribute="centerX" id="H4Q-2z-R1P"/>
+                                                    <constraint firstItem="kXD-xK-J4n" firstAttribute="top" secondItem="h98-OP-6eT" secondAttribute="bottom" constant="8" id="JS4-3v-vby"/>
+                                                    <constraint firstItem="1pr-1G-BfJ" firstAttribute="top" secondItem="cAp-eK-Qjl" secondAttribute="top" id="O6m-Tc-m5u"/>
+                                                    <constraint firstItem="h98-OP-6eT" firstAttribute="centerX" secondItem="1pr-1G-BfJ" secondAttribute="centerX" id="Vfz-wb-ssH"/>
+                                                    <constraint firstAttribute="trailing" secondItem="1pr-1G-BfJ" secondAttribute="trailing" id="Y4O-Hk-JwT"/>
+                                                </constraints>
+                                                <size key="customSize" width="256" height="333"/>
+                                                <connections>
+                                                    <outlet property="earthDateLabel" destination="kXD-xK-J4n" id="mTc-bV-s7x"/>
+                                                    <outlet property="imageView" destination="1pr-1G-BfJ" id="iNE-7V-IDL"/>
+                                                </connections>
                                             </collectionViewCell>
                                         </cells>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                     </collectionView>
                                 </subviews>
                                 <color key="backgroundColor" red="1" green="0.27058823529999998" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstItem="SBe-o7-QKw" firstAttribute="centerX" secondItem="6jW-cw-odc" secondAttribute="centerX" id="0AZ-WJ-kGC"/>
                                     <constraint firstAttribute="trailing" secondItem="3We-F1-eBc" secondAttribute="trailing" constant="8" id="GNQ-0a-Z8b"/>
                                     <constraint firstItem="3We-F1-eBc" firstAttribute="leading" secondItem="6jW-cw-odc" secondAttribute="leading" constant="8" id="P9K-9s-M6V"/>
-                                    <constraint firstItem="3We-F1-eBc" firstAttribute="top" secondItem="SBe-o7-QKw" secondAttribute="bottom" constant="25" id="iCb-bj-k7U"/>
-                                    <constraint firstItem="SBe-o7-QKw" firstAttribute="top" secondItem="6jW-cw-odc" secondAttribute="top" constant="25" id="jUs-mr-7Fu"/>
-                                    <constraint firstAttribute="bottom" secondItem="3We-F1-eBc" secondAttribute="bottom" constant="8" id="zYx-rD-Ib7"/>
+                                    <constraint firstItem="3We-F1-eBc" firstAttribute="centerY" secondItem="6jW-cw-odc" secondAttribute="centerY" id="XWw-44-0c6"/>
                                 </constraints>
                             </view>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rover" translatesAutoresizingMaskIntoConstraints="NO" id="7Nw-mW-KgX">
@@ -237,7 +257,6 @@
                         <viewLayoutGuide key="safeArea" id="7Vx-MM-kYf"/>
                     </view>
                     <connections>
-                        <outlet property="cameraButton" destination="SBe-o7-QKw" id="LJc-CL-gFJ"/>
                         <outlet property="marsBackground" destination="6jW-cw-odc" id="Jka-mb-LQj"/>
                         <outlet property="roverImageView" destination="7Nw-mW-KgX" id="Aey-mc-e8U"/>
                     </connections>

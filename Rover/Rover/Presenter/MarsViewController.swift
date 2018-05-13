@@ -83,7 +83,7 @@ class MarsViewController: UIViewController {
     }
     
     @objc func curiousityRoverSelected() {
-        performSegue(withIdentifier: "pushRover", sender: Rovers.curiousity)
+        performSegue(withIdentifier: "pushRover", sender: Rovers.curiosity)
     }
     
     @objc func spiritRoverSelected() {

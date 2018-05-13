@@ -12,8 +12,10 @@ class RoverCameraViewController: UIViewController {
 
     @IBOutlet weak var marsBackground: UIView!
     @IBOutlet weak var roverImageView: UIImageView!
-    @IBOutlet weak var cameraButton: UIButton!
-    var roverType:Rovers = Rovers.opportunity
+    var roverImageMetaData = [RoverImageMetaData]()
+    var roverType = Rovers.opportunity
+    var interactor = APINetworkInteractor.shared
+    var page = 1
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,7 +23,6 @@ class RoverCameraViewController: UIViewController {
         marsBackground.curveTopEdge(magnitude: 0.2)
         marsBackground.addLinearGradient(bottom: Constants.Colors.marsBottomTone, top: Constants.Colors.marsTopTone)
         view.addLinearGradient(bottom: Constants.Colors.spaceBottomTone, top: Constants.Colors.spaceTopTone, start:CGPoint(x: 0.9, y: 0.0))
-        cameraButton.titleLabel?.adjustsFontSizeToFitWidth = true
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -31,10 +32,32 @@ class RoverCameraViewController: UIViewController {
             roverImageView.image = roverImage.withRenderingMode(.alwaysTemplate)
             roverImageView.tintColor = UIColor.groupTableViewBackground
         }
-        
         title = roverType.rawValue.capitalized
+        fetchImageMetaData()
     }
     
-    @IBAction func cameraButtonSelected(_ sender: UIButton) {
+    func fetchImageMetaData() {
+        interactor.getImageMetaData(rover: roverType, page: page) { (imageMetaData:[RoverImageMetaData]?, error:Error?) in
+            DispatchQueue.main.async {
+                if error != nil {
+                    self.showErrorAlert()
+                } else if let imageMetaData = imageMetaData {
+                    self.roverImageMetaData.append(contentsOf: imageMetaData)
+                }
+            }
+        }
+    }
+    
+    func showErrorAlert() {
+        let alert = UIAlertController(title: "Houston We have a problem", message: "Something went wrong when getting the data", preferredStyle: .alert)
+        
+        let cancel = UIAlertAction.init(title: "Cancel", style: .cancel)
+        let retry = UIAlertAction(title: "Retry", style: .default) { (_) in
+            self.fetchImageMetaData()
+        }
+        
+        alert.addAction(cancel)
+        alert.addAction(retry)
+        present(alert, animated: true)
     }
 }

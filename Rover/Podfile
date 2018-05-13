@@ -4,13 +4,12 @@ platform :ios, '11.0'
 target 'Rover' do
 
   use_frameworks!
-
-  # Pods for Rover
-  pod 'Firebase/Core'
+  pod 'Firebase/Core', '5.0.0'
+  pod 'Firebase/RemoteConfig', '5.0.0'
 
   target 'RoverTests' do
     inherit! :search_paths
-    # Pods for testing
+    pod 'Nimble', '7.1.1'
   end
 
   target 'RoverUITests' do

@@ -23,7 +23,7 @@ After cloning this repo you'll need to use CocoaPods to download third party dep
 0) [Install CocoaPods](https://guides.cocoapods.org/using/getting-started.html)
 1) In Terminal navigate to the root directory where the project was cloned then execute the commands
 * `cd ./Rover`
-* `pod install`
+* `pod update`
 
 ## Creative Contributions
 This App has used a few resources provided by the wonderful community of designers on [The Noun Project](https://thenounproject.com)

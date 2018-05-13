@@ -13,6 +13,7 @@ class RoverCameraViewController: UIViewController {
     @IBOutlet weak var marsBackground: UIView!
     @IBOutlet weak var roverImageView: UIImageView!
     @IBOutlet weak var cameraButton: UIButton!
+    var roverType:Rovers = Rovers.opportunity
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,6 +31,8 @@ class RoverCameraViewController: UIViewController {
             roverImageView.image = roverImage.withRenderingMode(.alwaysTemplate)
             roverImageView.tintColor = UIColor.groupTableViewBackground
         }
+        
+        title = roverType.rawValue.capitalized
     }
     
     @IBAction func cameraButtonSelected(_ sender: UIButton) {

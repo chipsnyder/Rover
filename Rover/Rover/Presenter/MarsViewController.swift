@@ -66,7 +66,11 @@ class MarsViewController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        
+     
+        if let roverCamera = segue.destination as? RoverCameraViewController,
+            let roverType = sender as? Rovers  {
+            roverCamera.roverType = roverType
+        }
     }
     
     func animateRover(source: RoverView, destination:CGPoint) {
